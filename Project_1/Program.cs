@@ -8,7 +8,7 @@ double[,] InitMatrix()
 {
     Console.WriteLine("Введите количество строк m: ");
     int m = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine("Введите количество столбцов n: ");
+    Console.WriteLine("Введите количество столбцов n:");
     int n = Convert.ToInt32(Console.ReadLine());
     Random rnd = new Random();
 
