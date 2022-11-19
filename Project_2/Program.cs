@@ -9,7 +9,7 @@
 int[,] InitMatrix()
 {
     Random rnd = new Random();
-    int[,] mtrx = new int[rnd.Next(1,10),rnd.Next(1,10)];
+    int[,] mtrx = new int[rnd.Next(2,10),rnd.Next(2,10)];
     for (int i = 0; i < mtrx.GetLength(0); i++)
     {
         for (int j = 0; j < mtrx.GetLength(1); j++)
