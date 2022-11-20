@@ -34,7 +34,7 @@ void PrintArray(double[] arr)
 {
     for (int i = 0; i < arr.Length; i++)
         {
-            Console.WriteLine($"Среднее арифметическое столбца {i+1} равно: {arr[i]}");
+            Console.WriteLine($"Среднее арифметическое столбца {i+1} равно: {Math.Round(arr[i],1)}");  
         }
     
 }
@@ -57,6 +57,7 @@ double[] SredneeArifm(int[,] mtrx)
     
     return srednee;
 }
+
 Console.WriteLine("Введите кол-во строк матрицы: ");
 int m = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите кол-во столбцов матрицы: ");
@@ -64,6 +65,7 @@ int n = Convert.ToInt32(Console.ReadLine());
 int[,] matrix = InitMatrix(m,n);
 Console.WriteLine();
 PrintMatrix(matrix);
+
 double[] result = SredneeArifm(matrix);
 Console.WriteLine("============================");
 PrintArray(result);
